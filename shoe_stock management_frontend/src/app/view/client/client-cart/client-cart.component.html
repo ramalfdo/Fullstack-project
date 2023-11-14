@@ -1,0 +1,37 @@
+<h2> My Cart</h2>
+<div class="row col-12" >
+    <h3 *ngIf="!cart.length"> No Products added to cart</h3>
+    <table *ngIf="cart.length" class="table  table-striped table-hover">
+        <thead  class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let data of cart let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{data.name}}</td>
+            <td>{{data.qty}}</td>
+<!--            <td width="150"> <input class="form-control col-2" type="number" [(ngModel)]="data.qty"></td>-->
+            <td> LKR {{data.unitPrice}}</td>
+            <td> LKR {{data.amount}}</td>
+            <td> <button class="btn btn-danger" (click)="removeCart(data.item)"> Remove </button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <br><b> LKR {{totalAmount}}</b></td>
+            <td> <br> <button class="btn btn-info" (click)="purchase()" style="color: aliceblue;"> Purchase </button></td>
+
+
+        </tr>
+        </tbody>
+    </table>
+</div>

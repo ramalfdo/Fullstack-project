@@ -1,0 +1,45 @@
+<div class="text-center div">
+
+    <main class="form-signin w-100 m-auto">
+        <form [formGroup]="registerForm">
+            <h1 class="h3 mb-3 fw-normal text-white">Create Your Account Here</h1>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Alex" formControlName="name" >
+                <label for="name">Name</label>
+            </div>
+            <br>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="address" placeholder="Colombo" formControlName="address" >
+                <label for="address">Address</label>
+            </div>
+            <br>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="mobile" placeholder="077123456" formControlName="mobile" >
+                <label for="mobile">Mobile</label>
+            </div>
+            <br>
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="user_name" placeholder="Alex_u" formControlName="user_name" >
+                <label for="user_name">User Name</label>
+            </div>
+            <br>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password" >
+                <label for="floatingPassword">Password</label>
+            </div>
+
+
+            <button class="w-100 btn btn-lg btn-dark" (click)="createAccount()" style="background-color: rgb(0, 0, 0);">Register</button>
+            <br>
+            <br>
+            <a [routerLink]="['/authentication/login']"><button class="w-100 btn btn-sm btn-outline-dark" style="color: rgb(0, 0, 0);">I have an Account</button></a>
+        </form>
+    </main>
+
+
+
+</div>

@@ -1,0 +1,25 @@
+<h2> My Orders</h2>
+<div class="row col-12" >
+    <h3 *ngIf="!orders.length"> No Orders Palced</h3>
+    <table *ngIf="orders.length" class="table  table-striped table-hover">
+        <thead  class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Products</th>
+            <th scope="col">Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let data of orders let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>
+                <p *ngFor="let product of data.products_list">{{product.name}}  &nbsp; &nbsp;x  &nbsp;&nbsp;
+                    {{getQty(product._id,data.products)}} </p>
+            </td>
+            <td>LKR {{data.amount}}</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>

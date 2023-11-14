@@ -1,0 +1,23 @@
+
+<div mat-dialog-content>
+    <h2>Total Amount : LKR {{data.total}}</h2>
+    <mat-form-field appearance="fill">
+        <mat-label>Credit Card Number</mat-label>
+        <input type="text" matInput >
+    </mat-form-field>
+
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Exp Date</mat-label>
+        <input type="text" matInput >
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>CSV</mat-label>
+        <input type="text" matInput >
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Cancel</button>
+    <button mat-button (click)="purchase()" cdkFocusInitial>Purchase</button>
+</div>

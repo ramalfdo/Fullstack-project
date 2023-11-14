@@ -1,0 +1,22 @@
+{
+  "name": "tea_mangement_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "test": "NODE_ENV=test jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-status": "^1.6.2",
+    "mongodb": "^4.13.0",
+    "socket.io": "^4.5.4"
+  },
+  "devDependencies": {
+    "jest": "^29.4.1",
+    "mongodb-memory-server": "^8.11.4",
+    "supertest": "^6.3.3"
+  }
+}

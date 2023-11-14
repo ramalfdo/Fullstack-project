@@ -1,0 +1,31 @@
+
+ <div class="text-center div">
+   
+
+<main class="form-signin w-100 m-auto">
+    <form [formGroup]="loginForm">
+
+        <h1 class="h3 mb-3 fw-normal" style="color: rgb(255, 255, 255);">Hey..... Welcome Back ! Sign In </h1>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="User Name" formControlName="user_name">
+            <label for="floatingInput">User Name</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password">
+            <label for="floatingPassword">Password</label>
+        </div>
+
+
+        <button class="w-100 btn btn-lg btn-dark" (click)="logIn()" style="background-color: rgb(0, 0, 0);">Log In</button>
+        <br>
+        <br>
+        <a [routerLink]="['/authentication/account-create']"><button class="w-100 btn btn-sm bg-dark-subtle"  style="color: rgb(0, 0, 0);">I don't have an Account</button></a>
+        <p class="mt-5 mb-3 text-muted"></p>
+    </form>
+</main>
+
+
+
+</div>

@@ -1,0 +1,121 @@
+<div class="body">
+<div class="container">
+    <div class="row">
+      <div class="col-2 wrapper">
+        <div class="sidebar">
+          <ul>
+            <li><a [routerLink]="['/admin/products']"><i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">
+                    Product List
+                </span>
+                </a>
+            <li><a [routerLink]="['/admin/orders']"><i class="fas fa-users"></i>Our Orders</a></li>
+          </ul>
+          <ul>
+            <li><a (click)="logout()"><i class="fas fa-users"></i><b>Log Out</b></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-10">
+        <br>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- <div class="area"></div><nav class="main-menu">
+    <ul>
+        <li>
+            <a [routerLink]="['/admin/products']">
+                <i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">
+                    Product List
+                </span>
+            </a>
+          
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-globe fa-2x"></i>
+                <span class="nav-text">
+                    Global Surveyors
+                </span>
+            </a>
+            
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+               <i class="fa fa-comments fa-2x"></i>
+                <span class="nav-text">
+                    Group Hub Forums
+                </span>
+            </a>
+            
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+               <i class="fa fa-camera-retro fa-2x"></i>
+                <span class="nav-text">
+                    Survey Photos
+                </span>
+            </a>
+           
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-film fa-2x"></i>
+                <span class="nav-text">
+                    Surveying Tutorials
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-book fa-2x"></i>
+                <span class="nav-text">
+                   Surveying Jobs
+                </span>
+            </a>
+        </li>
+        <li>
+           <a href="#">
+               <i class="fa fa-cogs fa-2x"></i>
+                <span class="nav-text">
+                    Tools & Resources
+                </span>
+            </a>
+        </li>
+        <li>
+           <a href="#">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <span class="nav-text">
+                    Member Map
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+               <i class="fa fa-info fa-2x"></i>
+                <span class="nav-text">
+                    Documentation
+                </span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="logout">
+        <li>
+           <a (click)="logout()">
+                 <i class="fa fa-power-off fa-2x"></i>
+                <span class="nav-text">
+                    Logout
+                </span>
+            </a>
+        </li>  
+    </ul>
+</nav>
+<div class="col-10">
+    <br>
+    <router-outlet></router-outlet>
+  </div> -->

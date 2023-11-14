@@ -1,0 +1,14 @@
+<h2 class="heading-p">All Available Products</h2>
+<div class="row col-12 page-background">
+    <div *ngFor="let product of products" class="col-3">
+        <div class="card" style="margin: 0px;">
+            <div class="card-body">
+                <h2 class="card-title">{{product.name}}</h2>
+                <p class="card-text">{{product.description}}</p>
+                <h4 class="card-title">Units : {{product.qty}}</h4>
+                <h4 class="card-title">Unit Price : LKR {{product.price}}</h4>
+                <button class="btn btn-primary" (click)="addToCart(product)" style="background-color: rgb(12, 81, 121);">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>

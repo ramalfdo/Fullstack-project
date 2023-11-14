@@ -1,0 +1,29 @@
+
+<div mat-dialog-content class="mat-typography">
+    <h2>Create the product</h2>
+    <form [formGroup]="createProductForm">
+    <mat-form-field appearance="fill">
+        <mat-label>Product Name</mat-label>
+        <input type="text" matInput formControlName="name">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea type="text" rows="10" matInput formControlName="description"> </textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Qty</mat-label>
+        <input type="number" matInput formControlName="qty">
+    </mat-form-field>
+        <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Price</mat-label>
+        <input type="number" matInput formControlName="price">
+    </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Cancel</button>
+    <button mat-button (click)="createProduct()">Create</button>
+</div>

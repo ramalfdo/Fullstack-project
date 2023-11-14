@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2 wrapper">
+            <div class="sidebar">
+                
+                <ul>
+                    <li><a routerLink="/client/products"><i class="fas fa-users"></i>Products</a></li>
+                    <li><a routerLink="/client/my-order"><i class="fas fa-users"></i>My Orders</a></li>
+                    <li><a routerLink="/client/my-cart"><i class="fas fa-users"></i>My Cart</a></li>
+                </ul>
+                <ul>
+                    <li><a (click)="logout()"><i class="fas fa-users"></i><b>Log Out</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-10">
+            <br>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
